@@ -1,0 +1,54 @@
+[ui]
+username = Neal Fachan <neal@qumulo.com>
+ssh = ssh -C
+
+[extensions]
+mq =
+hgext.extdiff =
+hgext.patchbomb =
+largefiles =
+qumulo = ~/work/tools/hgext/hg_qumulo
+record =
+color = 
+pager =
+purge =
+
+[largefiles]
+minsize = 10
+
+[extdiff]
+cmd.sdiff = diff
+opts.sdiff = -Nu --show-c-func
+
+[hooks]
+# Prevent "hg pull" if MQ patches are applied.
+prechangegroup.mq-no-pull = ! hg qtop > /dev/null 2>&1
+# Prevent "hg push" if MQ patches are applied.
+preoutgoing.mq-no-push = ! hg qtop > /dev/null 2>&1
+
+[diff]
+showfunc = True
+git = True
+unified = 10
+
+[email]
+from = neal@qumulo.com
+method = smtp
+
+[smtp]
+host = mail.corp.qumulo.com
+port = 25
+
+[pager]
+pager = LESS='FSRX' less
+quiet = True
+
+# The following sections are nice to have but not required
+[alias]
+# Can be extended or customized to personal preferences
+q = qseries -s -v
+qstat = qdiff --stat
+qcref = !hg qrefresh -X. && hg qrefresh --config ui.interface.chunkselector=curses --interactive
+
+[qumulo]
+unified = 10

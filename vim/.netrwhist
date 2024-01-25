@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='/home/neal/maelstrom/crates/maelstrom-web/www'
+let g:netrw_dirhist_7='/home/neal/meticulous/crates/meticulous-client/src'
+let g:netrw_dirhist_6='/home/neal/meticulous/crates/cargo-metest/src/metadata'
+let g:netrw_dirhist_5='/home/neal/meticulous/crates/cargo-metest/src'
+let g:netrw_dirhist_4='/home/neal/meticulous/crates/cargo-metest/src/metadata'
+let g:netrw_dirhist_3='/home/neal/meticulous/crates/cargo-metest/src'
+let g:netrw_dirhist_2='/home/neal/git/trybuild/src'
+let g:netrw_dirhist_1='/home/neal/git/trybuild'
+let g:netrw_dirhist_0='/home/neal/git/tokio/tests-build'
+let g:netrw_dirhist_9='/home/neal/git/tokio'

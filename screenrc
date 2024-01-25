@@ -1,0 +1,17 @@
+autodetach on
+bell_msg ""
+defscrollback 10000
+startup_message off
+vbell on
+vbellwait 0
+
+markkeys "@=z:H=t:M=m=.:L=b: = =v:y=V:x=o"
+bind j focus down
+bind ^j focus down
+bind k focus up
+bind ^k focus up
+bind ' ' windows
+bind ^D digraph
+bind d digraph
+bind ; colon
+bind / select
