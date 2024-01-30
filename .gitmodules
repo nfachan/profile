@@ -28,3 +28,6 @@
 [submodule "vim/plugged/vim-startify"]
 	path = vim/plugged/vim-startify
 	url = https://github.com/mhinz/vim-startify.git
+[submodule "vim/plugged/ferret"]
+	path = vim/plugged/ferret
+	url = https://github.com/wincent/ferret.git

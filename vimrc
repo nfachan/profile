@@ -84,8 +84,8 @@ Plug 'jlanzarotta/bufexplorer'
 Plug 'wincent/ferret'
 Plug 'itchyny/lightline.vim'
 Plug 'mhinz/vim-startify'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
+"Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+"Plug 'junegunn/fzf.vim'
 Plug 'preservim/nerdtree'
 "Plug 'liuchengxu/vista.vim'
 Plug 'preservim/tagbar'
