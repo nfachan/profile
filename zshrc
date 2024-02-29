@@ -52,5 +52,3 @@ autoload -U vcs_info
 autoload -U zcalc
 autoload -U zargs
 autoload -U zmv
-
-eval "$(direnv hook zsh)"
