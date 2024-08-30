@@ -9,6 +9,7 @@ export EDITOR=vim
 export HISTSIZE=10000
 #export MANSECT="2:3:9:1:4:5:6:7:l:n"
 export GOPATH=$HOME/go
+export LOCALE_ARCHIVE=/usr/lib/locale/locale-archive
 
 # expansion and globbing
 setopt extended_glob

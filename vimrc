@@ -39,14 +39,23 @@ let g:lsc_server_commands = {
     \                 'check': {
     \                     'targets': [ 
     \                         'x86_64-unknown-linux-gnu',
-    \                         'x86_64-unknown-linux-gnu' 
     \                     ]
     \                 },
     \                 'cargo': {
     \                     'cfgs': { 
     \                         'target_arch': "wasm32",
-    \                     }
-    \                 }
+    \                     },
+    \                     'buildScripts': {
+    \                       'enable': v:true,
+    \                     },
+    \                     'extraEnv': {
+    \                         'CARGO_TARGET_DIR': 'target/analyzer',
+    \                     },
+    \                     'loadOutDirsFromCheck': v:true,
+    \                 },
+    \                 'procMacro': {
+    \                   'enable': v:true,
+    \                 },
     \             }
     \         }
     \     }
